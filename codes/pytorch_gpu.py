@@ -10,4 +10,5 @@ print(torch.cuda.get_device_name(current_device_id))
 
 print('check loading tensor to gpu : ')
 torch.ones((1)).to('cuda')
+print('cudnn_version ', torch.backends.cudnn.version())
 print('success')
